@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NYC arcitecture</title>
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+  <link href="basic-styles.css" rel="stylesheet">
+  <link href="model-styles.css" rel="stylesheet">
+  <link href="scrolly-styles.css" rel="stylesheet">
+  <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.2.0/scrollama.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+  <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+</head>
+
+<body>
+  <div class='content'>
+    <div class="header">
+      <h1>New York City's Architectural Marvels: A Geek's Odyssey through the Concrete Jungle</h1>
+    </div>
+  
+  <div class="byline">
+      <p>By <a href="https://ml4998.github.io">Mariam Lobjanidze</a></p>
+  </div>
+
+    <p>If you’ve ever been mocked by native New-Yorkers for walking slow because you were too busy admiring skyscrapers, you are not alone. In fact, you have plenty of reasons to be mesmerized by a city that makes one feel so tiny. Aside from how fascinating they are (duh!), a lot of iconic buildings in New York City have a rich architectural history. Here’s your guide to sounding smart during an history NYC trivia. Pro-tip: just wear comfortable shoes if it’s your first time in the city and step aside in case you would like to take a picture. 
+    </p>
+   
+    
+  </div>
+
+  <section class="scrolly-container" id="scroll-model">
+    <div class="sticky-thing">
+      <!-- 3D stuff goes below this line -->
+      <!-- be sure to add min-camera-orbit="auto auto -1000%" max-camera-orbit="auto auto 1000%" -->
+
+      
+    
+    
+    
+    
+      
+
+
+
+  
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Statue of Liberty 3D Model</title>
+        <script type="module" src="https://unpkg.com/@google/model-viewer@latest"></script>
+        <style>
+            /* Style for the annotation text */
+            .HotspotAnnotation {
+                font-size: 10px; /* Adjust the font size as needed */
+                color: #ffffff; /* This is white, change as you wish */
+                background-color: #333333; /* Dark background for the text */
+                border-radius: 5px;
+                padding: 5px;
+                max-width: 150px; /* Adjust width as needed */
+                box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Optional: Adds a subtle shadow effect */
+                word-wrap: break-word;
+            }
+    
+            /* Hide the hotspot button circles */
+            model-viewer .Hotspot {
+                background: none;
+                border: none;
+                box-shadow: none;
+            }
+    
+            /* Hide the default hotspot icons provided by model-viewer */
+            model-viewer::part(hotspot-icon) {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+    
+    <model-viewer src="statue_of_liberty.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" interaction-prompt="auto" style="width: 100%; height: 100vh;" exposure="1.02" camera-target="23.12m 60.44m -45.65" camera-orbit="110deg 75deg 5m">
+        <button class="Hotspot" slot="hotspot-1" data-position="4.188827486869698m 79.65896912651071m 2.3044355379708783m" data-normal="0.6381853620013942m -0.11104330091363576m -0.7618325465936417m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">The torch symbolizes enlightenment</div>
+        </button>
+        <!-- ... other hotspots ... -->
+        <div class="HotspotAnnotation">The torch symbolizes enlightenment</div>
+        </button><button class="Hotspot" slot="hotspot-2" data-position="0.48769165509352774m 69.17521545771667m -3.5404353943556472m" data-normal="0.63572673934753m -0.7651550661403216m -0.10192760979419523m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">The seven spikes of the crown represent seven continents</div>
+        </button><button class="Hotspot" slot="hotspot-4" data-position="0.8068192749817626m 48.65985741871809m -4.767162776998543m" data-normal="0.8385005084974162m 0.053628699173190304m -0.5422553456394562m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Lady Liberty wears a robe "stola" which represents the Roman influence of the goddess "Libertas."</div>
+        </button>
+    </model-viewer>
+    
+    </body>
+    </html>
+    
+
+
+
+
+
+      <!-- 3D stuff goes above this line -->
+    </div>
+
+
+   
+    <div class="scrolly-overlay">
+      <div class="step" id="step-one">
+        <p>This is the first step</p>
+      </div>
+      <div class="step" id="step-two">
+        <p>This is the second step.</p>
+      </div>
+      <div class="step" id="step-three">
+        <p>This is the third step.</p>
+      </div>
+      <div class="step" id="step-four">
+        <p>This is step four</p>
+      </div>
+      <div class="step" id="step-five">
+        <p>This is fifth step</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+<!-- Start of the Guggenheim Museum Scrollytelling Section -->
+<section id="scrolly-guggenheim" class="scrolly-container">
+  <div class="sticky-thing">
+    <!-- Initial placeholder image of the Guggenheim Museum -->
+    <img id="guggenheim-image" src="1.jpg" alt="Guggenheim Museum">
+  </div>
+  <div class="steps-container">
+    <!-- Step with text corresponding to the first image -->
+    <div class="step" data-index="0">
+      <p>Your text for the Guggenheim Museum step one, corresponding to 1.jpg.</p>
+    </div>
+    <!-- Step with text corresponding to the second image -->
+    <div class="step" data-index="1">
+      <p>Your text for the Guggenheim Museum step two, corresponding to 2.jpg.</p>
+    </div>
+    <!-- Step with text corresponding to the third image -->
+    <div class="step" data-index="2">
+      <p>Your text for the Guggenheim Museum step three, corresponding to 3.jpg.</p>
+    </div>
+    <!-- Step with text corresponding to the fourth image -->
+    <div class="step" data-index="3">
+      <p>Your text for the Guggenheim Museum step four, corresponding to 4.jpg.</p>
+    </div>
+    <!-- Add more steps and images as needed -->
+  </div>
+</section>
+<!-- End of the Guggenheim Museum Scrollytelling Section -->
+
+<script>
+  // Additional setup for Guggenheim Museum images and steps
+  (() => {
+    const scroller = scrollama();
+    const guggenheimImages = [
+      '1.jpg', // Image for the first step
+      '2.jpg', // Image for the second step
+      '3.jpg', // Image for the third step
+      '4.jpg',  // Image for the fourth step
+      // Add paths for any additional images as needed
+    ];
+
+    scroller
+      .setup({
+        parent: '#scrolly-guggenheim',
+        step: '#scrolly-guggenheim .step',
+        offset: 0.5,
+        debug: false, // Set to true to see the trigger points
+      })
+      .onStepEnter(({ element }) => {
+        // Get the index of the current step
+        const stepIndex = element.getAttribute('data-index');
+        // Change the image source based on the current step
+        document.getElementById('guggenheim-image').src = guggenheimImages[stepIndex];
+      });
+
+    // Reinitialize scroller when the window is resized
+    window.addEventListener('resize', scroller.resize);
+  })();
+</script>
+
+
+
+
+
+
+  <div class="footer">
+    <div class="content">
+      <p>You can find the code for this template <a href="https://github.com/jsoma/page-templates/">here</a>.
+        Delete
+        these lines
+        when you use it, and don't forget to change the &lt;title&gt; tag!!!</p>
+    </div>
+  </div>
+
+  <!-- Loads <model-viewer> for browsers: -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <script>
+    /* Scrollytelling code goes under here */
+
+    var viewer = document.querySelector("model-viewer")
+
+    d3.select("#step-one").on("stepin", function () {
+    })
+
+    d3.select("#step-two").on("stepin", function () {
+    })
+
+    d3.select("#step-three").on("stepin", function () {
+    })
+  </script>
+
+  <script>
+      /*************
+      
+      This is the JavaScript that makes the scrolly work 
+      
+      *************/
+
+      /* 
+      This part attaches a scroll to the element with id="scroll-model"    
+      */
+
+      (() => {
+        const scroller = scrollama()
+
+        scroller
+          .setup({
+            parent: document.querySelector("#scroll-model"),
+            step: ".step",
+            offset: 0.6,
+            debug: false,
+          })
+          .onStepEnter(function ({ element, index, direction }) {
+            const event = new CustomEvent("stepin", { detail: { direction: direction } })
+            element.dispatchEvent(event)
+          })
+          .onStepExit(function ({ element, index, direction }) {
+            const event = new CustomEvent("stepout", { detail: { direction: direction } })
+            if (direction === "up" && element.previousElementSibling) {
+              const event = new CustomEvent("stepin", { detail: { direction: direction } })
+              element.previousElementSibling.dispatchEvent(event)
+            }
+          })
+
+        window.addEventListener("resize", scroller.resize)
+      })()
+  </script>
+</body>
+
+</html>
